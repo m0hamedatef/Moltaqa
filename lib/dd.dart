@@ -1,0 +1,10 @@
+//{id: 100,
+// name: Superior Rooms,
+// image: https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,
+// price: 440k,
+// type: 5 Room,
+// rate: 4.5,
+// location: El Ma'ade,
+// is_favorited: true,
+// album_images: https://images.unsplash.com/photo-1566195992011-5f6b21e539aa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60,
+// description: Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document}
