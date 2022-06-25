@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hotel_booking/model/house.dart';
-import 'package:hotel_booking/screens/login.dart';
-import 'package:hotel_booking/theme/color.dart';
-import 'package:hotel_booking/utils/data2.dart';
+import 'package:moltaqa/model/house.dart';
+import 'package:moltaqa/screens/login.dart';
+import 'package:moltaqa/theme/color.dart';
+import 'package:moltaqa/utils/data2.dart';
 
 
 class BottomButtons extends StatelessWidget {

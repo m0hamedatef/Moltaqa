@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/theme/color.dart';
+import 'package:moltaqa/theme/color.dart';
 
 class SettingItem extends StatelessWidget {
   final IconData? leadingIcon;

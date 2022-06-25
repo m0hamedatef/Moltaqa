@@ -2,11 +2,9 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hotel_booking/theme/color.dart';
-
+import 'package:moltaqa/theme/color.dart';
 
 class FavoriteBox extends StatelessWidget {
-  
   FavoriteBox(
       {Key? key,
       this.bgColor = Colors.white,
@@ -35,7 +33,7 @@ class FavoriteBox extends StatelessWidget {
         curve: Curves.fastOutSlowIn,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(radius),
-          color:  Colors.white,
+          color: Colors.white,
           boxShadow: [
             BoxShadow(
               color: shadowColor.withOpacity(0.1),

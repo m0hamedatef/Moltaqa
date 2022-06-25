@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/theme/color.dart';
+import 'package:moltaqa/theme/color.dart';
 
 class IconBox extends StatelessWidget {
   IconBox(

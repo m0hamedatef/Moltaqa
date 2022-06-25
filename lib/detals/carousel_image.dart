@@ -1,8 +1,8 @@
 
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/main.dart';
-import 'package:hotel_booking/utils/data2.dart';
+import 'package:moltaqa/main.dart';
+import 'package:moltaqa/utils/data2.dart';
 
 int currentIndex = 0;
 class CarouselImages extends StatefulWidget {

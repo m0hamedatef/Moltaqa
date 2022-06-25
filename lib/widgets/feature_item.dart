@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/model/house_model.dart';
-import 'package:hotel_booking/theme/color.dart';
-import 'package:hotel_booking/widgets/favorite_box.dart';
+import 'package:moltaqa/model/house_model.dart';
+import 'package:moltaqa/theme/color.dart';
+import 'package:moltaqa/widgets/favorite_box.dart';
 import 'custom_image.dart';
 
 class FeatureItem extends StatelessWidget {

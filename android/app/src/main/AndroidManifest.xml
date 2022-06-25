@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sangvaleap.hotel_booking">
+    package="com.must.moltaqa">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
    <application
-        android:label="Real Estate"
+        android:label="Moltaqa"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"
            android:value="AIzaSyC8CorERhj2BxrkIB1PdclbWdhI7-EgN7E"/>

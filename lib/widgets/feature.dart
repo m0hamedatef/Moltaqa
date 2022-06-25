@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/theme/color.dart';
-import 'package:hotel_booking/widgets/favorite_box.dart';
+import 'package:moltaqa/theme/color.dart';
+import 'package:moltaqa/widgets/favorite_box.dart';
 import 'custom_image.dart';
 
 class FeatureItem2 extends StatelessWidget {
@@ -10,10 +10,11 @@ class FeatureItem2 extends StatelessWidget {
       this.width = 280,
       this.height = 300,
       this.onTap,
-      this.onTapFavorite, this.id})
+      this.onTapFavorite,
+      this.id})
       : super(key: key);
   final data;
-  final  id;
+  final id;
   final double width;
   final double height;
   final GestureTapCallback? onTapFavorite;

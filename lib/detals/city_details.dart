@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:get/get.dart';
-import 'package:hotel_booking/model/house_model.dart';
-import 'package:hotel_booking/screens/property_details.dart';
-import 'package:hotel_booking/theme/color.dart';
-import 'package:hotel_booking/widgets/custom_image.dart';
-import 'package:hotel_booking/widgets/favorite_box.dart';
+import 'package:moltaqa/model/house_model.dart';
+import 'package:moltaqa/screens/property_details.dart';
+import 'package:moltaqa/theme/color.dart';
+import 'package:moltaqa/widgets/custom_image.dart';
+import 'package:moltaqa/widgets/favorite_box.dart';
 
 class CityDetails extends StatelessWidget {
   final HouseModel houseModel;

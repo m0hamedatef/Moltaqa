@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:get/get.dart';
-import 'package:hotel_booking/model/house_model.dart';
-import 'package:hotel_booking/screens/favorite_screen.dart';
-import 'package:hotel_booking/screens/property_details.dart';
-import 'package:hotel_booking/screens/search_options.dart';
-import 'package:hotel_booking/utils/data2.dart';
-import 'package:hotel_booking/widgets/feature_item.dart';
-import 'package:hotel_booking/utils/data.dart';
-import 'package:hotel_booking/theme/color.dart';
+import 'package:moltaqa/model/house_model.dart';
+import 'package:moltaqa/screens/favorite_screen.dart';
+import 'package:moltaqa/screens/property_details.dart';
+import 'package:moltaqa/screens/search_options.dart';
+import 'package:moltaqa/utils/data2.dart';
+import 'package:moltaqa/widgets/feature_item.dart';
+import 'package:moltaqa/utils/data.dart';
+import 'package:moltaqa/theme/color.dart';
 
 
 

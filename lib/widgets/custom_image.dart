@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/theme/color.dart';
+import 'package:moltaqa/theme/color.dart';
 
 class CustomImage extends StatelessWidget {
   CustomImage(this.image,

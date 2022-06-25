@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/screens/location_screen.dart';
-import 'package:hotel_booking/screens/search.dart';
-import 'package:hotel_booking/screens/seller_screen.dart';
-import 'package:hotel_booking/screens/setting.dart';
-import 'package:hotel_booking/theme/color.dart';
-import 'package:hotel_booking/utils/constant.dart';
-import 'package:hotel_booking/widgets/bottombar_item.dart';
+import 'package:moltaqa/screens/location_screen.dart';
+import 'package:moltaqa/screens/search.dart';
+import 'package:moltaqa/screens/seller_screen.dart';
+import 'package:moltaqa/screens/setting.dart';
+import 'package:moltaqa/theme/color.dart';
+import 'package:moltaqa/utils/constant.dart';
+import 'package:moltaqa/widgets/bottombar_item.dart';
 
 import 'home.dart';
 
@@ -26,7 +26,7 @@ class _RootAppState extends State<RootApp> with TickerProviderStateMixin {
     },
     {
       "icon": "assets/icons/edit.svg",
-      "page": SellerScreen(), 
+      "page": SellerScreen(),
     },
     {
       "icon": "assets/icons/search.svg",

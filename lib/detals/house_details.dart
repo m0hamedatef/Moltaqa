@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'package:hotel_booking/model/house.dart';
-import 'package:hotel_booking/model/house_model.dart';
-import 'package:hotel_booking/theme/color.dart';
+import 'package:moltaqa/model/house.dart';
+import 'package:moltaqa/model/house_model.dart';
+import 'package:moltaqa/theme/color.dart';
 
 
 bool isFavorited= false;

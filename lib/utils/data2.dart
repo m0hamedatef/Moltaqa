@@ -1,4 +1,4 @@
-import 'package:hotel_booking/model/house.dart';
+import 'package:moltaqa/model/house.dart';
 
 final _house1 = House(
     id: 100,

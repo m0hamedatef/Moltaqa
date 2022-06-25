@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hotel_booking/detals/bottom_buttons.dart';
-import 'package:hotel_booking/detals/carousel_image.dart';
-import 'package:hotel_booking/detals/custom_appbar.dart';
-import 'package:hotel_booking/detals/house_details.dart';
-import 'package:hotel_booking/model/house_model.dart';
+import 'package:moltaqa/detals/bottom_buttons.dart';
+import 'package:moltaqa/detals/carousel_image.dart';
+import 'package:moltaqa/detals/custom_appbar.dart';
+import 'package:moltaqa/detals/house_details.dart';
+import 'package:moltaqa/model/house_model.dart';
 
 
 class DetailsScreen extends StatefulWidget {

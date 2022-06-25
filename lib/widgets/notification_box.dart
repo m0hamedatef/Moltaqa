@@ -1,7 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hotel_booking/theme/color.dart';
+import 'package:moltaqa/theme/color.dart';
 
 class NotificationBox extends StatelessWidget {
   NotificationBox(

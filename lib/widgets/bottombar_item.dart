@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hotel_booking/theme/color.dart';
+import 'package:moltaqa/theme/color.dart';
 
 class BottomBarItem extends StatelessWidget {
   const BottomBarItem(this.icon,
@@ -37,7 +37,6 @@ class BottomBarItem extends StatelessWidget {
         ),
         child: SvgPicture.asset(
           icon,
-          
           color: isActive ? primary : color,
           width: 20,
           height: 20,

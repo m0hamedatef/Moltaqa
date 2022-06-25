@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hotel_booking/screens/root_app.dart';
-import 'package:hotel_booking/theme/color.dart';
+import 'package:moltaqa/screens/root_app.dart';
+import 'package:moltaqa/theme/color.dart';
 
 class CustomAppBar extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class CustomAppBar extends StatelessWidget {
       padding: const EdgeInsets.only(
         left: 0,
         right: 30,
-        top: 20 ,
+        top: 20,
       ),
       child: Container(
         height: size.height * 0.1,
@@ -20,15 +20,17 @@ class CustomAppBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             InkWell(
-              onTap: ()=> Get.back(),
+              onTap: () => Get.back(),
               child: Container(
                 height: 50,
                 width: 50,
-                
-                child: Icon(Icons.arrow_back_ios,color: greenO, size: 22,),
+                child: Icon(
+                  Icons.arrow_back_ios,
+                  color: greenO,
+                  size: 22,
+                ),
               ),
             ),
-            
           ],
         ),
       ),

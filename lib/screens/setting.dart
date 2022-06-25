@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hotel_booking/screens/favorite_screen.dart';
-import 'package:hotel_booking/theme/color.dart';
-import 'package:hotel_booking/utils/data.dart';
-import 'package:hotel_booking/widgets/custom_image.dart';
-import 'package:hotel_booking/widgets/setting_item.dart';
+import 'package:moltaqa/screens/favorite_screen.dart';
+import 'package:moltaqa/theme/color.dart';
+import 'package:moltaqa/utils/data.dart';
+import 'package:moltaqa/widgets/custom_image.dart';
+import 'package:moltaqa/widgets/setting_item.dart';
 
 class SettingPage extends StatelessWidget {
   const SettingPage({Key? key}) : super(key: key);

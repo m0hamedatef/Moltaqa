@@ -1,16 +1,15 @@
 import 'dart:developer';
-
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hotel_booking/model/house_model.dart';
-import 'package:hotel_booking/screens/city.dart';
-import 'package:hotel_booking/screens/property_details.dart';
-import 'package:hotel_booking/theme/color.dart';
-import 'package:hotel_booking/widgets/city_item.dart';
-import 'package:hotel_booking/widgets/feature_item.dart';
-import 'package:hotel_booking/widgets/notification_box.dart';
-import 'package:hotel_booking/widgets/recommend_item.dart';
+import 'package:moltaqa/model/house_model.dart';
+import 'package:moltaqa/screens/city.dart';
+import 'package:moltaqa/screens/property_details.dart';
+import 'package:moltaqa/theme/color.dart';
+import 'package:moltaqa/widgets/city_item.dart';
+import 'package:moltaqa/widgets/feature_item.dart';
+import 'package:moltaqa/widgets/notification_box.dart';
+import 'package:moltaqa/widgets/recommend_item.dart';
 
 
 class HomePage extends StatefulWidget {

@@ -195,7 +195,7 @@ class HousesData {
         "https://images.unsplash.com/photo-1601084881623-cdf9a8ea242c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
       ],
       albumImages: AlbumImagesData.albumImages[3],
-      rate: '3.6',
+      rate: '4.1',
       type: CategoriesData.categories[3].name,
     ),
     HouseModel(
@@ -531,7 +531,7 @@ class HousesData {
 class CategoriesData {
   static List<CategoriesModel> categories = [
     CategoriesModel(name: 'All', icon: 'assets/icons/home.svg'),
-    CategoriesModel(name: '5 Room', icon: 'assets/icons/home.svg'),
+    CategoriesModel(name: '6 Room', icon: 'assets/icons/home.svg'),
     CategoriesModel(name: 'Double Room', icon: 'assets/icons/home.svg'),
     CategoriesModel(name: '3 Room', icon: 'assets/icons/home.svg'),
     CategoriesModel(name: '4 Room', icon: 'assets/icons/home.svg'),

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hotel_booking/detals/bottom_buttons.dart';
-import 'package:hotel_booking/detals/carousel_image.dart';
-import 'package:hotel_booking/detals/city_details.dart';
-import 'package:hotel_booking/detals/custom_appbar.dart';
-import 'package:hotel_booking/detals/house_details.dart';
-import 'package:hotel_booking/model/house.dart';
-import 'package:hotel_booking/model/house_model.dart';
-import 'package:hotel_booking/theme/color.dart';
-import 'package:hotel_booking/utils/data2.dart';
+import 'package:moltaqa/detals/bottom_buttons.dart';
+import 'package:moltaqa/detals/carousel_image.dart';
+import 'package:moltaqa/detals/city_details.dart';
+import 'package:moltaqa/detals/custom_appbar.dart';
+import 'package:moltaqa/detals/house_details.dart';
+import 'package:moltaqa/model/house.dart';
+import 'package:moltaqa/model/house_model.dart';
+import 'package:moltaqa/theme/color.dart';
+import 'package:moltaqa/utils/data2.dart';
 
 class CityScreen extends StatefulWidget {
   final HouseModel houseModel;
