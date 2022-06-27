@@ -66,15 +66,13 @@ class CityModel {
   });
 }
 
-/// DUMMY DATA
-///
 class HousesData {
   static final List<HouseModel> featuredHouses = [
     HouseModel(
       name: 'Superior Rooms',
       albumImages: AlbumImagesData.albumImages[0],
       description:
-          'Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document',
+          'شقه كبيره  بالمعادي تتميز بمساحتها الواسعه وبها 6 غرف ويوجد نظام مراقبه بمداخل العقار حيث توجد بجانب المحجكمه الدستوريه العليا و مكتبة المعادي ',
       id: 100,
       imageUrl:
           'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
@@ -106,7 +104,7 @@ class HousesData {
       name: 'Double Face',
       albumImages: AlbumImagesData.albumImages[0],
       description:
-          'Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document',
+          'شقه جديده بالمعادي بالقرب من المترو والكورنيش موقع متميز جدا بمساحه 200 م دور 13 اسانسير تشطيب سوبر لوكس حيث يوجد بها 3 غرف وحمام خارجي وخط ارضي ',
       id: 101,
       imageUrl:
           'https://images.unsplash.com/photo-1505692952047-1a78307da8f2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
@@ -114,8 +112,8 @@ class HousesData {
       location: 'El Ma\'ade',
       price: '\600k',
       rate: '4.5',
-      bathRooms: 3,
-      bedRooms: 2,
+      bathRooms: 2,
+      bedRooms: 3,
       date: '20',
       garages: 1,
       moreImagesUrl: [
@@ -135,11 +133,11 @@ class HousesData {
       type: CategoriesData.categories[1].name,
     ),
     HouseModel(
-      address: '23 Asr Elnile Street, Cairo',
+      address: 'second district  Nasr City, Cairo',
       imageUrl:
           "https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
       description:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+          'الشقه بعيده تماما عن اي ضوضاء او ازعاج لا يوجد عليها اي اقساط .. الشقه بالكامل بانوراما وفيو مفتوح وبحري ويوجد صيانه وامن خاص بالبرج ويوجد بها كافه المرافق',
       price: '900k',
       bedRooms: 2,
       bathRooms: 3,
@@ -147,7 +145,7 @@ class HousesData {
       phoneNumber: '01158481561',
       date: '30',
       sqMeter: 180,
-      location: '6 October',
+      location: 'Nasr City',
       id: 102,
       name: 'Classic Home',
       view: 'Main Street',
@@ -167,11 +165,11 @@ class HousesData {
       type: CategoriesData.categories[2].name,
     ),
     HouseModel(
-      address: '23 Asr Elnile Street, Cairo',
+      address: 'The 7 district 6 October, Giza',
       imageUrl:
           "https://images.unsplash.com/photo-1571508601891-ca5e7a713859?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
       description:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+          'شقه تقع فى الحي السابع امام مسجد الحصري وبالقرب من سنتر الامريكيه وكافه الخدمات حيث تقع امام مسجد من اكبر مساجد المدينه وهو مسجد الحصري ',
       price: '850k',
       bedRooms: 2,
       bathRooms: 2,
@@ -181,8 +179,8 @@ class HousesData {
       sqMeter: 170,
       location: '6 October',
       id: 103,
-      name: 'apartment on the nile',
-      view: 'Nile',
+      name: 'apartment in Al-Hosary Mosque ',
+      view: 'Al-Hosary',
       seller: 'House Owner',
       paymentMethod: 'Cash or Installmets',
       isFavorite: false,
@@ -199,12 +197,12 @@ class HousesData {
       type: CategoriesData.categories[3].name,
     ),
     HouseModel(
-      address: '23 Asr Elnile Street, Cairo',
+      address: 'Sheikh Zayed City , Giza',
       imageUrl:
           "https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
       description:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-      price: '100m',
+          'فيلا بمدينه الشيخ زايد لها جراج خاص بها بمساحه 320 م تقع بالقرب من مصلحه الضرائب وهايبر',
+      price: '10m',
       bedRooms: 4,
       bathRooms: 3,
       garages: 1,
@@ -231,12 +229,12 @@ class HousesData {
       type: CategoriesData.categories[4].name,
     ),
     HouseModel(
-      address: '23 Asr Elnile Street, Cairo',
+      address: 'Mohandessin  Street, Cairo',
       imageUrl:
           "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fGZhc2hpb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
       description:
-          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-      price: '110k',
+          'شقه بالمهندسين تقع بالقرب من مدرسه زويل يوجد بها غرفتين ومساحتها 140 متر ',
+      price: '710k',
       bedRooms: 2,
       bathRooms: 2,
       garages: 0,
@@ -246,7 +244,7 @@ class HousesData {
       rate: '4.8',
       phoneNumber: '01144078667',
       name: 'beautiful apartment ',
-      location: 'New Cairo',
+      location: 'Mohandessin ',
       view: 'Main street and garden ',
       seller: 'House Owner',
       paymentMethod: 'Cash or Installments ',

@@ -10,7 +10,7 @@ class Location extends StatefulWidget {
 }
 
 class _LocationState extends State<Location> {
-  var markers = HashSet<Marker>();
+  var myMarkers = HashSet<Marker>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,6 +24,35 @@ class _LocationState extends State<Location> {
           target: LatLng(29.996211, 30.965832),
           zoom: 14.4746,
         ),
+        onMapCreated: (GoogleMapController googleMapController) {
+          setState(() {
+            myMarkers.add(
+              Marker(
+                markerId: MarkerId('1'),
+                position: LatLng(29.97669093465613, 30.944159917974947),
+                infoWindow: InfoWindow(
+                  title: 'this property for sell ☺',
+                  snippet:
+                      'هذا العقار امام مول دايموند وبالقرب  من مسجد الحصري و جامعه 6 اكتوبر  ',
+                ),
+              ),
+            );
+          });
+          setState(() {
+            myMarkers.add(
+              Marker(
+                markerId: MarkerId('2'),
+                position: LatLng(29.975890573598736, 31.271504359108857),
+                infoWindow: InfoWindow(
+                  title: 'this property for sell ❤',
+                  snippet:
+                      'شقه كبيره  بالمعادي امام مكتبه المعادي العامه تتميز بمساحتها الواسعه  ',
+                ),
+              ),
+            );
+          });
+        },
+        markers: myMarkers,
       ),
     );
   }

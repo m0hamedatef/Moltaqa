@@ -38,7 +38,7 @@ flutter_icons:
   ios: true
 
 flutter_app_name:
-    name: "Real Estate"
+    name: " Moltaqa For Must University"
 
 flutter:
   uses-material-design: true

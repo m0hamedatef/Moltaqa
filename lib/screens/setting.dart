@@ -29,7 +29,7 @@ class SettingPage extends StatelessWidget {
           ),
           SliverList(
             delegate: SliverChildBuilderDelegate(
-                  (context, index) => buildBody(context: context),
+              (context, index) => buildBody(context: context),
               childCount: 1,
             ),
           ),
@@ -63,8 +63,8 @@ class SettingPage extends StatelessWidget {
   }
 
   Widget buildBody({
-  required BuildContext context,
-}) {
+    required BuildContext context,
+  }) {
     return SingleChildScrollView(
       padding: EdgeInsets.only(right: 20, top: 10),
       child: Column(
@@ -123,12 +123,6 @@ class SettingPage extends StatelessWidget {
               onTap: () => Get.to(Favorite())),
           SizedBox(height: 10),
           SettingItem(
-              title: "Privacy",
-              leadingIcon: Icons.privacy_tip_outlined,
-              leadingIconColor: green,
-              onTap: () {}),
-          SizedBox(height: 10),
-          SettingItem(
             title: "Log Out",
             leadingIcon: Icons.logout_outlined,
             leadingIconColor: Colors.grey.shade400,
@@ -144,7 +138,7 @@ class SettingPage extends StatelessWidget {
 
   showConfirmLogout({
     required BuildContext context,
-}) {
+  }) {
     showCupertinoModalPopup(
       context: context,
       builder: (context) => CupertinoActionSheet(
@@ -168,4 +162,3 @@ class SettingPage extends StatelessWidget {
     );
   }
 }
-
