@@ -1,7 +1,9 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 
 import 'package:moltaqa/theme/color.dart';
 import 'package:moltaqa/utils/generate_keies.dart';
+import 'package:image_picker/image_picker.dart';
 
 class SellerScreen extends StatefulWidget {
   const SellerScreen({Key? key}) : super(key: key);
@@ -11,6 +13,18 @@ class SellerScreen extends StatefulWidget {
 }
 
 class _SellerScreenState extends State<SellerScreen> {
+
+  final ImagePicker _picker = ImagePicker();
+   File? pickedImage;
+  fetchImage() async{
+    final XFile? image = await _picker.pickImage(source: ImageSource.gallery, maxHeight: 170, maxWidth: 170);
+    if (image == null){
+       return;
+     }
+    setState(() {
+       pickedImage = File(image.path);
+     });
+  }
   final GlobalKey<FormState> _formkey = GlobalKey();
   int currentStep = 0;
   bool isCompleted = false;
@@ -141,6 +155,13 @@ class _SellerScreenState extends State<SellerScreen> {
               fontSize: 32,
             ),
           ),
+          SizedBox(height: 8,),
+          Text(
+            "waiting for admin accept",
+            style: TextStyle(
+              fontSize: 20,
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 80, right: 80),
             child: ElevatedButton(
@@ -164,6 +185,7 @@ class _SellerScreenState extends State<SellerScreen> {
                 Price.clear();
                 City.clear();
                 Address.clear();
+                pickedImage = null;
               }),
             ),
           )
@@ -242,7 +264,7 @@ class _SellerScreenState extends State<SellerScreen> {
 
   proprtyInfo() {
     return Container(
-      height: 450,
+      height: 600,
       padding: EdgeInsets.only(left: 10, right: 10),
       child: Column(
         children: [
@@ -358,16 +380,38 @@ class _SellerScreenState extends State<SellerScreen> {
                               labelStyle:
                                   TextStyle(color: greenO, fontSize: 12)),
                         ),
+                       /* TextField(
+                          cursorColor: greenO,
+                          controller: Price,
+                          readOnly: true,
+                          decoration: InputDecoration(
+                              labelText: 'Images',
+                              labelStyle:
+                                  TextStyle(color: greenO, fontSize: 12)),
+                        ),
+                      
+                      SizedBox(
+                          height: 65,
+                       ),*/
+                     
                       ],
+
+                      
                     ),
                   ))),
-          SizedBox(
-            height: 15,
-          ),
-          TextButton(
-            onPressed: () {},
-            child: Text('Choose Image'),
-          )
+            
+                      TextButton(
+                         onPressed: fetchImage,
+                         child: Text('Choose Image'),
+                        ),
+                      
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: Center(child: pickedImage == null? null: Image.file(pickedImage!),),
+                      ),
+                       SizedBox(
+                          height: 15,
+                       ),
         ],
       ),
     );
