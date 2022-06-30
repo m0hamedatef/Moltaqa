@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:moltaqa/model/house_model.dart';
 import 'package:moltaqa/screens/city.dart';
+import 'package:moltaqa/screens/notif.dart';
 import 'package:moltaqa/screens/property_details.dart';
+import 'package:moltaqa/screens/search_options.dart';
 import 'package:moltaqa/theme/color.dart';
 import 'package:moltaqa/widgets/city_item.dart';
 import 'package:moltaqa/widgets/feature_item.dart';
@@ -245,9 +247,9 @@ AlertDialog alterdialog(BuildContext context) {
                     SizedBox(height: 8,),
                     SizedBox(
                       width: double.infinity, 
-                      child: RaisedButton( color: Color(0xFF388E3C), shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20)
-                      ), child: Text('Go to' , style: TextStyle( color: Colors.white),), onPressed:() {} ,),)
+                      child: ElevatedButton(  child: Text('Go to' , style: TextStyle( color: Colors.white),), onPressed:() {
+                         Get.to(NearLocation(houseModel: HousesData.cityHouses[2]));
+                      },),)
                   ],),
                 )
               );
