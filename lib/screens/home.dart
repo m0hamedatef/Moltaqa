@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:moltaqa/model/house_model.dart';
 import 'package:moltaqa/screens/city.dart';
-import 'package:moltaqa/screens/notif.dart';
+import 'package:moltaqa/screens/notifi.dart';
 import 'package:moltaqa/screens/property_details.dart';
 import 'package:moltaqa/screens/search_options.dart';
 import 'package:moltaqa/theme/color.dart';
