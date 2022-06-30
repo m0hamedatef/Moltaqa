@@ -1,6 +1,7 @@
 import 'dart:collection';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:moltaqa/theme/color.dart';
 
 class Location extends StatefulWidget {
   const Location({Key? key}) : super(key: key);
@@ -15,7 +16,11 @@ class _LocationState extends State<Location> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Your Favourite Propery'),
+        title: Text('Your Favourite Propery', 
+        style: TextStyle(color: greenO),),
+        centerTitle: true,
+        backgroundColor: appBarColor,
+        shadowColor: Colors.white10,
       ),
       body: GoogleMap(
         myLocationButtonEnabled: true,
