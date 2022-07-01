@@ -10,23 +10,23 @@ import 'package:moltaqa/widgets/feature_item.dart';
 import 'package:moltaqa/utils/data.dart';
 import 'package:moltaqa/theme/color.dart';
 
-
-
 class SearchPage extends StatefulWidget {
-  Function getfavorite= (){};
-  SearchPage({ Key? key, }) : super(key: key);
+  Function getfavorite = () {};
+  SearchPage({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<SearchPage> createState() => _SearchPageState();
 }
 
 class _SearchPageState extends State<SearchPage> {
-  Object? selected= '';
-  final GlobalKey<FormState> _formkey= GlobalKey();
+  Object? selected = '';
+  final GlobalKey<FormState> _formkey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
+    return Scaffold(
       backgroundColor: appBgColor,
       body: CustomScrollView(
         slivers: [
@@ -36,19 +36,32 @@ class _SearchPageState extends State<SearchPage> {
             snap: true,
             toolbarHeight: 80,
             floating: true,
-            leading: IconButton(icon: Icon(Icons.format_list_bulleted, color:Color(0xFF388E3C) ,), onPressed:()=> Get.to(SearchOptions()),),
-            title:  TextField(
-          decoration: InputDecoration( suffixIcon: IconButton(icon: Icon(Icons.search, color: Color(0xFF388E3C) ,),
-          onPressed: (){},), 
-          hintText: 'City, address ..', border: InputBorder.none),
-          
-        ),
-         
-           ),
-            SliverList(delegate: SliverChildListDelegate([
-            
-           SizedBox(height: 10,),
-           Padding(
+            leading: IconButton(
+              icon: Icon(
+                Icons.format_list_bulleted,
+                color: Color(0xFF388E3C),
+              ),
+              onPressed: () => Get.to(SearchOptions()),
+            ),
+            title: TextField(
+              decoration: InputDecoration(
+                  suffixIcon: IconButton(
+                    icon: Icon(
+                      Icons.search,
+                      color: Color(0xFF388E3C),
+                    ),
+                    onPressed: () {},
+                  ),
+                  hintText: 'City, address ..',
+                  border: InputBorder.none),
+            ),
+          ),
+          SliverList(
+              delegate: SliverChildListDelegate([
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
               padding: const EdgeInsets.fromLTRB(15, 0, 15, 10),
               child: Text(
                 "Available",
@@ -59,9 +72,11 @@ class _SearchPageState extends State<SearchPage> {
                 ),
               ),
             ),
-           getFeature(),
-           SizedBox(height: 15,),
-           Padding(
+            getFeature(),
+            SizedBox(
+              height: 15,
+            ),
+            Padding(
               padding: const EdgeInsets.fromLTRB(15, 0, 15, 10),
               child: Text(
                 "Most Close",
@@ -72,15 +87,14 @@ class _SearchPageState extends State<SearchPage> {
                 ),
               ),
             ),
-           getFeature()
-
-            ]
-            )) ],
+            getFeature()
+          ]))
+        ],
       ),
-    );}
-    
+    );
+  }
 
-   getFeature() {
+  getFeature() {
     return CarouselSlider(
       options: CarouselOptions(
         height: 300,
@@ -93,23 +107,21 @@ class _SearchPageState extends State<SearchPage> {
         (index) => FeatureItem(
           houseModel: HousesData.featuredHouses[index],
           onTapFavorite: () {
-            // setState(() {
-            //   features[index]['is_favorited']= !features[index]['is_favorited'];
-            // });
-            //  features[index]["is_favorited"] ?  Favorite.favoriteDataList.add(features[index]) :
-            //      Favorite.favoriteDataList.remove(Favorite.favoriteDataList[index]);
-            //
+            setState(() {
+              HousesData.featuredHouses[index].isFavorite =
+                  !HousesData.featuredHouses[index].isFavorite;
+            });
+            HousesData.featuredHouses[index].isFavorite
+                ? HousesData.favoritesHouses
+                    .add(HousesData.featuredHouses[index])
+                : HousesData.favoritesHouses
+                    .remove(HousesData.featuredHouses[index]);
           },
           onTap: () {
-            // Get.to(DetailsScreen(house: houseList[index]));
+            Get.to(DetailsScreen(houseModel: HousesData.featuredHouses[index]));
           },
         ),
       ),
     );
   }
-  
-
- 
-
-
 }

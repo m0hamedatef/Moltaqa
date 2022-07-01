@@ -72,7 +72,7 @@ class HousesData {
       name: 'Modern Home',
       albumImages: AlbumImagesData.albumImages[0],
       description:
-          'شقه كبيره  بالمعادي تتميز بمساحتها الواسعه وبها 6 غرف ويوجد نظام مراقبه بمداخل العقار حيث توجد بجانب المحجكمه الدستوريه العليا و مكتبة المعادي ',
+          'شقه كبيره  بالمعادي تتميز بمساحتها الواسعه وبها 6 غرف ويوجد نظام مراقبه بمداخل العقار حيث توجد بجانب المحكمه الدستوريه العليا و مكتبة المعادي ',
       id: 100,
       imageUrl:
           'https://realestate.eg/ckfinder/userfiles/images/village-west/properties%20for%20sale%20in%20village%20west%20compound.jpg',
@@ -256,7 +256,6 @@ class HousesData {
         "https://imgs.search.brave.com/OZVbz8GBEGv9bC5kxSGss-3MUGNZ-aL_Y18VP17W7pU/rs:fit:734:225:1/g:ce/aHR0cHM6Ly90c2U0/LmV4cGxpY2l0LmJp/bmcubmV0L3RoP2lk/PU9JUC4yZXVjUkFF/dUY5bVBFbkFiOEFs/YTdnSGFFeSZwaWQ9/QXBp",
         "https://imgs.search.brave.com/uWg00_YC_kmyHseOwKj_nU28NBmLwuVMz5aD5cS8vlY/rs:fit:540:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC55/cmkxa0IyWjZWQUNF/YVJwZDRkVTZRQUFB/QSZwaWQ9QXBp",
         "https://imgs.search.brave.com/MS2tatkcnjDsII_-i-D7EPRhR-dA-7SPj26e4ZDbkCQ/rs:fit:632:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5O/MnlXUGZUY0laNDRM/YmhQYTBQQS1BSGFG/aiZwaWQ9QXBp",
-
       ],
       albumImages: AlbumImagesData.albumImages[4],
       type: CategoriesData.categories[4].name,
