@@ -16,8 +16,10 @@ class _LocationState extends State<Location> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Your Favourite Propery', 
-        style: TextStyle(color: greenO),),
+        title: Text(
+          'Your Favourite Propery',
+          style: TextStyle(color: greenO),
+        ),
         centerTitle: true,
         backgroundColor: appBarColor,
         shadowColor: Colors.white10,
@@ -47,6 +49,43 @@ class _LocationState extends State<Location> {
             myMarkers.add(
               Marker(
                 markerId: MarkerId('2'),
+                position: LatLng(30.051277123175606, 31.349747287254942),
+                infoWindow: InfoWindow(
+                  title: 'this property for sell in Nasr City',
+                  snippet: ' بالقرب من السراج مول ',
+                ),
+              ),
+            );
+          });
+          setState(() {
+            myMarkers.add(
+              Marker(
+                markerId: MarkerId('3'),
+                position: LatLng(30.046298846787245, 30.990930446727432),
+                infoWindow: InfoWindow(
+                  title: 'villa for sell in Sheikh Zayed',
+                  snippet: ' Villa in front of Canadian International College ',
+                ),
+              ),
+            );
+          });
+          setState(() {
+            myMarkers.add(
+              Marker(
+                markerId: MarkerId('4'),
+                position: LatLng(30.049596608911184, 31.207120024669003),
+                infoWindow: InfoWindow(
+                  title: 'this property for sell ',
+                  snippet:
+                      'هيشتهر حي "المهندسين" الراقي بشارع "جامعة الدول العربية" الفسيح الذي تصطف على جانبَيه المباني السكنية ومباني الشركات المرتفعة. وتشغل المقاهي العصرية والمطاعم ذات الطراز العالمي الطوابق الأرضية في هذا الحي وفي الشوارع المحيطة حيث تقع الشقه بشارع محمد كامل امام فندق سلمى  ',
+                ),
+              ),
+            );
+          });
+          setState(() {
+            myMarkers.add(
+              Marker(
+                markerId: MarkerId('5'),
                 position: LatLng(29.975890573598736, 31.271504359108857),
                 infoWindow: InfoWindow(
                   title: 'this property for sell ❤',
