@@ -17,7 +17,7 @@ class _LocationState extends State<Location> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Your Favourite Propery',
+          'Your Favourite Property',
           style: TextStyle(color: greenO),
         ),
         centerTitle: true,
